@@ -1,28 +1,31 @@
-# farm
+# Description
 
-Corso: Sistemi Operativi.
+The implementation of the project includes several aspects such as:
+- C programming
+- debugging tools such as GDB and valgrind
+- Makefile
+- proper paths and directories management
+- System Calls
+- Processes and POSIX Threads management
+- Socket Communications (local)
+- Signal management: masks and signal handlers
+- bash scripts for testing
+- more operations
 
-# Descrizione
+# Makefile – Commands
 
-L'implementazione del progetto comprende diversi aspetti, tra cui i fondamenti di programmazione in C, la gestione di strumenti di debug come GDB e valgrind, la realizzazione di un Makefile, la corretta gestione di path e directory, chiamate di sistema, gestione di thread POSIX e processi, comunicazione socket (in locale), gestione dei segnali con conseguente realizzazione di maschere e signal handler, e l'utilizzo di script bash per il testing e operazioni varie.
+The Makefile provides several useful commands for compiling, testing and cleaning up the system:
+- make all: Compiles and links the targets farm, generafile and collector
+- make test: Runs the command "bash test.sh" to start testing using the script file "test.sh"
+- make clean: Cleans the system of files generated during compilation and testing
 
-# Makefile – Comandi
+# Binary file generator
 
-Il Makefile fornisce diversi comandi utili per la compilazione, il testing e la pulizia del sistema:
+generafile.c (filegenerator): Code for generating binary files containing long values (used for testing).
 
-make all: Compila e collega i target farm, generafile e collector.
+# Additional testcases
 
-make test: Esegue il comando "bash test.sh" per avviare il testing con lo script 'test.sh'
-
-make clean: Pulisce il sistema dai file generati durante la compilazione e il testing.
-
-# Generatore di file binari
-
-generafile.c: Codice per la generazione di file binari contenenti valori long (usato per il testing).
-
-# Ulteriori testcase
-
-Presenti all'interno della directory testcases
+Located within the testcases directory.
 
 
 
